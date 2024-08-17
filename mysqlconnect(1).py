@@ -6,7 +6,7 @@ import mysql.connector
 
 # connect to database
 # You can get the Hostname and Password from the connection information section of Mysql 
-connection = mysql.connector.connect(user='root', password='dX5TQJaM6Ows5Xexq4NZ1siA',host='172.21.135.239',database='sales')
+connection = mysql.connector.connect(user='root', password='password',host='hostname',database='sales')
 
 # create cursor
 
