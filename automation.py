@@ -3,15 +3,15 @@ import mysql.connector
 # Import libraries required for connecting to DB2 or PostgreSql
 import psycopg2
 # Connect to MySQL
-mysql_connection = mysql.connector.connect(user='root', password='dX5TQJaM6Ows5Xexq4NZ1siA',host='172.21.135.239',database='sales')
+mysql_connection = mysql.connector.connect(user='root', password='password',host='host',database='database')
 mysql_cursor = mysql_connection.cursor()
 
 # Connect to DB2 or PostgreSql
-dsn_hostname = '172.21.161.129'
-dsn_user='postgres'        # e.g. "abc12345"
-dsn_pwd ='aTBsGZOfX3T3ROYdEBPaLDaV'      # e.g. "7dBZ3wWt9XN6$o0J"
-dsn_port ="5432"                # e.g. "50000" 
-dsn_database ="postgres"           # i.e. "BLUDB"
+dsn_hostname = 'hostname'
+dsn_user='username'
+dsn_pwd ='password'
+dsn_port ="port"
+dsn_database ="database" 
 
 psql_conn = psycopg2.connect(
    database=dsn_database, 
